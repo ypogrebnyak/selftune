@@ -3543,6 +3543,14 @@ input[type="submit"].btn.btn-mini {
     color: #777777;
     text-shadow: 0 1px 0 #ffffff;
 }
+
+.navbar span.brand {
+    font-size: 26px;
+    margin-top: 10px;
+    color: #fb5359;
+    padding-left: 25px;
+}
+
 .navbar .brand:hover {
     text-decoration: none;
 }
@@ -5347,7 +5355,7 @@ header#header .navbar > ul li > .dropdown-menu li a {
 }
 header#header .navbar > ul li > .dropdown-menu li a:hover,
 header#header .navbar > ul li > .dropdown-menu li.active a {
-    background: #ff4848;
+    background: #fb5359;
     color: #fff;
 }
 header#header .navbar > ul > li {
@@ -5510,8 +5518,8 @@ header#header .navbar .sign-in {
     background: #000;
     width: 228px;
     height: 406px;
-    top: 86px;
-    left: 33px;
+    top: 88.5px;
+    left: 35.5px;
 }
 .feature-right .iphone5 .iphone5-screen img {
     max-width: 228px;
@@ -5746,7 +5754,7 @@ header#header .navbar .sign-in {
     font-size: 20px;
     font-weight: 800;
     display: block;
-    background: #ff4848;
+    background: #fb5359;
     float: left;
     width: 95px;
     text-align: center;
@@ -6066,7 +6074,7 @@ body.compact aside .nav.affix {
 
 header#header #logo {
     text-indent: -9999px;
-    background: url('../img/icon-site1.1.png') no-repeat;
+    background: url('../img/icon.png') no-repeat;
     background-size: contain;
     width: 60px;
     height: 50px;
@@ -6078,18 +6086,15 @@ body.compact footer{
     margin-left: 10px;
 }
 
-#about p{
-    font-size: 18px !important;
-    font-family: 'Gentium Book Basic', Georgia, serif !important;
-    color: #555 !important;
-    line-height: 24px !important;
-}
-
 footer p a.active{
     color: #fb5359;
 }
 
 #team a img{
-    width: 227px;
-    height: 227px;
+    width: 186px;
+    height: 186px;
+}
+
+li:before {
+    color: #fb5359;
 }

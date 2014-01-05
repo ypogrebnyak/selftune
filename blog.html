@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-        <title>Blog</title>
+        <title>CardioMood - Blog</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
@@ -13,16 +13,6 @@
         <script src="js/moment.min.js"></script>
 
         <style>
-
-            header#header #logo {
-                text-indent: -9999px;
-                background: url('img/icon-site1.1.png') no-repeat;
-                background-size: contain;
-                width: 60px;
-                height: 50px;
-                padding: 0px;
-                margin: 5px 0;
-            }
 
             .tumblr_title{
                 font-weight: bold;
@@ -56,14 +46,6 @@
                 text-decoration: underline;
             }
 
-            footer p a.active{
-                color: #ff1515;
-            }
-
-            body.compact footer{
-                margin-left: 30px;
-            }
-
             article.row{
                 border: none;
             }
@@ -76,15 +58,16 @@
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
 
+
         <header id="header">
-            <div class="container" style="">
+            <div class="container">
                 <div class="navbar">
                     <!--                    CardioMood-->
-                    <a class="brand" id="logo" href="index.html">StartUp</a>
-                    <span class="brand" style="font-size: 30px; margin-top: 10px; color: #ff4848; padding-left: 25px;">
+                    <a class="brand" id="logo" href="index.html">CardioMood</a>
+                    <span class="brand">
                         CardioMood
                     </span>
-                    <ul style="font-size: 16px;">
+                    <ul>
                         <li ><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li class="active"><a href="blog.html">Blog</a></li>
@@ -107,8 +90,8 @@
             </div>
 
 
-            <footer style="margin-left: 0px;" >
-                <p>© 2013 CardioMood <a  href="index.html">Home</a> <a href="about.html">About</a> <a class="active" href="blog.html">Blog</a><a href="contact.html">Contact</a></p>
+            <footer>
+                <p>© 2014 CardioMood <a  href="index.html">Home</a> <a href="about.html">About</a> <a class="active" href="blog.html">Blog</a><a href="contact.html">Contact</a></p>
             </footer>
 
         </div> <!-- /container -->
@@ -133,7 +116,7 @@
                     //                    console.log(this);
                     $(this).find('p').hide();
                     $(this).find('p:first').show();
-                    $(this).find('p:first').after("<p class='show_more' ><a href='javascript:void();'  >Читать дальше</a></p>");
+                    $(this).find('p:first').after("<p class='show_more' ><a href='javascript:void();'  >Show more</a></p>");
                 });
                 
                 $('.show_more').live('click', function(){
