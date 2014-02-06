@@ -1,0 +1,12 @@
+/*
+ *Appica Support IE8 Style Sheet v1.0
+ *Copyright 2013 8Guild.com
+ */
+
+.pricing-plan {
+	background: transparent url(../../img/img-android/ie8-transparency.png) repeat;
+}
+.subscription-form #email {
+	padding: 12px 25px 0 25px;
+}
+

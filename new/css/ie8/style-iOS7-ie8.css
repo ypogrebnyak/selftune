@@ -1,0 +1,66 @@
+/*
+ *Appica Support IE8 Style Sheet v1.0
+ *Copyright 2013 8Guild.com
+ */
+
+.appstore-btn,
+.icloud-btn {
+	filter: alpha(opacity=100);
+}
+.appstore-btn:hover,
+.icloud-btn:hover {
+	filter: alpha(opacity=60);
+}
+
+/*Social Icons*/
+.si-icon,
+.im-icon-s,
+.im-icon-m,
+.im-icon-l {
+	width: 49px;
+	height: 49px;
+	border: 1px solid #fff;
+	filter: alpha(opacity=100);
+}
+.si-icon,
+.im-icon-s {
+	padding: 0 0 0 13px;
+}
+.si-icon:hover,
+.im-icon-s:hover,
+.im-icon-m:hover,
+.im-icon-l:hover {
+	filter: alpha(opacity=60) !important;
+}
+.si-icon-effect .si-icon:after,
+.si-icon-effect .im-icon-s:after,
+.si-icon-effect .im-icon-m:after,
+.si-icon-effect .im-icon-l:after {
+	background: transparent;
+}
+.no-touch .si-icon-effect .si-icon:hover,
+.no-touch .si-icon-effect .im-icon-s:hover,
+.no-touch .si-icon-effect .im-icon-m:hover,
+.no-touch .si-icon-effect .im-icon-l:hover {
+	color: #fff;
+}
+
+/*Subscription Form*/
+.subscription-form #email {
+	padding: 15px 60px 0 25px;
+}
+
+/*Buttons*/
+.buy-btn {
+	filter: alpha(opacity=100);
+}
+.buy-btn:hover {
+	filter: alpha(opacity=60);
+}
+
+.pricing-plan {
+	background: transparent url(../../img/img-iOS7/ie8-transparency.png) repeat;
+}
+
+
+

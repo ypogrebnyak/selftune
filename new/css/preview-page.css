@@ -1,0 +1,240 @@
+/*
+ *Appica Preview Page Style Sheet v1.1
+ *Copyright 2013 8Guild.com
+ */
+
+/*CSS Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/*Clearfix*/
+.group:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+	}
+*:first-child+html .group { zoom: 1; } /* IE7 */
+.clear {
+	clear: both;
+}
+
+html, body { height: 100%; }
+body { overflow: hidden; }
+.container {
+	width: 100%;
+	background: url(../img/preview/desktop-bg.jpg) center top;
+	min-height: 100%;
+	margin-bottom: -100px;
+}
+.container:after {
+	content: "";
+  display: block;
+}
+.footer, .container:after {
+	height: 100px;
+}
+.col {
+	float: left;
+	width: 50%;
+	position: relative;
+}
+.logo {
+	width: 290px;
+	margin: 40px auto 60px auto;
+}
+.ios-preview,
+.android-preview {
+	width: 230px;
+	margin: auto;
+	text-align: center;
+}
+.ios-preview h1,
+.android-preview h1 {
+	font: 300 1.7em 'Lato', Arial, Helvetica, sans-serif;
+	color: #fff;
+	margin-bottom: 20px;
+}
+.android-preview {
+	width: 220px;
+	margin-top: 190px;
+}
+.android-preview h1 {
+	font: 100 1.6em 'Roboto', Arial, Helvetica, sans-serif;
+}
+.iphone {
+	width: 230px;
+	height:438px;
+	background: url(../img/preview/iphone.png) no-repeat;
+	padding: 63px 0 0 28px;
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+.iphone img {
+	display: block;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+}
+.galaxy {
+	width: 220px;
+	height:437px;
+	background: url(../img/preview/galaxy.png) no-repeat;
+	padding: 37px 0 0 11px;
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+.galaxy img {
+	display: block;
+}
+.btn-middle {
+	display: table;
+	margin: auto;
+}
+.live-demo1 {
+	display: inline-block;
+	margin: 30px 0;
+	border: 1px solid #fff;
+	-webkit-border-radius: 45px;
+	-moz-border-radius: 45px;
+	border-radius: 45px;
+	padding: 12px 37px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 600;
+	font: 300 1.05em 'Lato', Arial, Helvetica, sans-serif;
+	color: #fff;
+	background-color: transparent;
+	-webkit-transition: all 450ms ease;
+	-moz-transition: all 450ms ease;
+	transition: all 450ms ease;
+}
+.live-demo1:hover {
+	color: #fff;
+	background-color: rgba(255,255,255,0.3);
+	-webkit-border-radius: 45px;
+	-moz-border-radius: 45px;
+	border-radius: 45px;
+}
+.live-demo2 {
+	display: inline-block;
+	margin: 30px 0;
+	height: 24px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 10px 37px;
+	font-size: 1.25em;
+	text-transform: uppercase;
+	font: 300 1.05em 'Roboto', Arial, Helvetica, sans-serif;
+	color: #fff;
+	text-decoration: none;
+	background-color: #a8dc67;
+	border-bottom: 2px solid #7aa346;
+	-webkit-transition: background-color 400ms ease, border-bottom 400ms ease;
+	-moz-transition: background-color 400ms ease, border-bottom 400ms ease;
+	transition: background-color 400ms ease, border-bottom 400ms ease;
+}
+.live-demo2:hover {
+	background-color: #95c45b;
+	border-bottom: 2px solid #95c45b;
+	color: #fff;
+}
+.live-demo2:active {
+	border-bottom: none;
+	border-top: 2px solid #7aa346;
+}
+.footer {
+	display: table;
+	width: 100%;
+	background-color: #fff;
+	text-align: center;
+}
+.copyright {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 20px;
+	color: #666;
+	font: 300 0.9em 'Roboto', Arial, Helvetica, sans-serif;
+}
+.copyright a {
+	font-weight: 600;
+	text-decoration: none;
+	color: #666;
+}
+.copyright a:hover {
+	text-decoration: underline;
+}
+
+/* Preloader */
+#preloader {
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:#fff;
+	z-index:100;
+}
+#status {
+	width:229px;
+	height:229px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	background-image:url(../img/loading.gif);
+	background-repeat:no-repeat;
+	background-position:center;
+	margin:-115px 0 0 -115px;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 1350px) {
+
+	.logo {	margin: 30px auto 40px auto; }
+	.android-preview { margin-top: 160px; }
+
+}
+
+@media screen and (max-width: 700px) {
+	
+	.container {
+		background: none;
+	}
+	.ios { 
+		background: url(../img/preview/ios-bg.png);
+		padding: 30px 0;
+	}
+	.android-preview { margin-top: 20px; }
+	.android { 
+		background: url(../img/preview/android-bg.jpg);
+		padding: 30px 0;
+	}
+	.logo {	margin: 0 auto 40px auto; }
+	.col {
+		width: 100%;
+		float: none;
+	}
+}
