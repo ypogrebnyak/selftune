@@ -84,6 +84,19 @@ $(document).ready(function(e) {
 	   }
 	});
 
+	//init Parse
+
+	var parseAppId = "ALqmBG9qF7wIqRLV0lF2fVFhsNJ1xCsoU01jE31v";
+	var parseKey = "N1OSA4ZnInv53G7KRzKPhV54xVVNqA7OgZNnAjWW";
+
+	Parse.initialize(parseAppId, parseKey);
+
+	//init Flurry
+
+	var flurryAppId = "NY7H99J5QH8QGHYW4XJZ";
+
+	FlurryAgent.startSession(flurryAppId);
+
 ///////////////////////////////////////////////////////////////////////////////////////
 	
 /////////////////////////////////////////////////////////////////////////////////////////////
@@ -131,12 +144,14 @@ $(document).ready(function(e) {
 		 }
 		} 
 	 
-	 $('#submit').click(function(){ 
+	 $('#subscription-form').submit(function(){ 
 		 var email = $('#email').val();
 		 var error1 = $('#error1');
 		 var error2 = $('#error2');
+		 var success1 = $('#success1');
 		 if ($.trim(email).length == 0) {
 			 $(this).css('color', '#e35c4a');
+			 success1.removeClass('visible');
 			 error2.removeClass('visible');
 			 error1.addClass('visible');
 			 return false;
@@ -145,14 +160,37 @@ $(document).ready(function(e) {
 			 $(this).css('color', '#6666cc');
 			 error1.removeClass('visible');
 			 error2.removeClass('visible');
-			 return; 
+			 success1.addClass('visible');
+			 addEmail(email);
+			 return false; 
 			}
 		 else {
 			 $(this).css('color', '#e35c4a');
+			 success1.removeClass('visible');
 			 error1.removeClass('visible');
 			 error2.addClass('visible');
 			 return false;
 	 }});
+
+	 function addEmail(email){
+        var Subscription = Parse.Object.extend("Subscription");
+        var query = new Parse.Query(Subscription);
+        query.equalTo("email", email);
+		query.count({
+		  success: function(count) {
+		    if (count == 0) {
+		        var sub = new Subscription();
+		        
+		        sub.save("email", email).then(function(){
+		        	FlurryAgent.logEvent("Subscription");
+        		});
+		    }
+		  },
+		  error: function(error) {
+		  }
+		});
+        
+    }
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 	

@@ -510,7 +510,7 @@ p {
 .team .im-icon-m,
 .team .im-icon-l {
 	margin: 15px 33px 0 0;
-	color: #999;
+	color: #fff;
 	-webkit-transition: all 400ms ease-in-out;
 	-moz-transition: all 400ms ease-in-out;
 	-o-transition: all 400ms ease-in-out;
@@ -523,7 +523,7 @@ p {
 .team .si-icon-effect .im-icon-s,
 .team .si-icon-effect .im-icon-m,
 .team .si-icon-effect .im-icon-l {
-	box-shadow: 0 0 0 1px #999;
+	box-shadow: 0 0 0 1px #fff;
 	-webkit-transition: all 400ms ease-in-out;
 	-moz-transition: all 400ms ease-in-out;
 	-o-transition: all 400ms ease-in-out;
@@ -533,13 +533,13 @@ p {
 .team:hover .im-icon-s,
 .team:hover .im-icon-m,
 .team:hover .im-icon-l {
-	color: #666;
+	color: #fff;
 }
 .team:hover .si-icon-effect .si-icon,
 .team:hover .si-icon-effect .im-icon-s,
 .team:hover .si-icon-effect .im-icon-m,
 .team:hover .si-icon-effect .im-icon-l {
-	box-shadow: 0 0 0 1px #666;
+	box-shadow: 0 0 0 1px #fff;
 }
 
 /*Clients*/
@@ -780,7 +780,7 @@ p {
 .subscription-form #submit:hover {
 	color: #6666cc !important;
 }
-.errors {
+.errors, .success {
 	width: 100%;
 	position: relative;
 }
@@ -807,7 +807,31 @@ p {
 	-moz-transition: all 400ms ease;
 	transition: all 400ms ease;
 }
-#error1.visible, #error2.visible {
+
+#success1 {
+	display: block;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	font-size: 1em;
+	font-weight: 300;
+	color: #fff;
+	background-color: #41c94c;
+	margin-top: 15px;
+	padding: 5px 15px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-webkit-transition: all 400ms ease;
+	-moz-transition: all 400ms ease;
+	transition: all 400ms ease;
+}
+#error1.visible, #error2.visible, #success1.visible {
 	opacity: 1;
 	filter: alpha(opacity=100);
 }
