@@ -3,10 +3,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>SelfTune</title>
-    <meta name="description" content="SelfTune - tune yourlsef!" />
+    <title>[self tune]</title>
+    <meta name="description" content="[self tune] - tune yourlsef!" />
 		<meta name="keywords" content="stress, mood, wellness, calmness, health, emotions, happiness, productivity, rest, refill" />
-		<meta name="author" content="SelfTune" />
+		<meta name="author" content="[self tune]" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <!--Favicon-->
     <link rel="shortcut icon" href="img/icon_small.png" type="image/x-icon">
@@ -44,10 +44,10 @@
       <nav>
       	<ul>
         	<li class="active"><a onclick="$('body').animatescroll({scrollSpeed:1000,easing:'easeInOutCubic'});" href="#home"><i class="fa fa-home"></i>Home</a></li>
-        	<li><a onclick="$('#features').animatescroll({scrollSpeed:1000,easing:'easeInOutCubic'});" href="#features"><i class="fa fa-gift"></i>Features</a></li>
-        	<li><a onclick="$('#about').animatescroll({scrollSpeed:1000,easing:'easeInOutCubic'});" href="#about"><i class="fa fa-dollar"></i>About</a></li>
-        	<li><a onclick="$('#team').animatescroll({scrollSpeed:1000,easing:'easeInOutCubic'});" href="#team"><i class="fa fa-user"></i>Our Team</a></li>
-        	<li><a onclick="$('#subscribe').animatescroll({scrollSpeed:1000,easing:'easeInOutCubic'});" href="#subscribe"><i class="fa fa-picture-o"></i>Subscribe</a></li>
+        	<li><a onclick="$('#features').animatescroll({scrollSpeed:1000,easing:'easeInOutCubic'});" href="#features"><i class="fa fa-magic"></i>Features</a></li>
+        	<!-- <li><a onclick="$('#about').animatescroll({scrollSpeed:1000,easing:'easeInOutCubic'});" href="#about"><i class="fa fa-info-circle"></i>About</a></li> -->
+        	<li><a onclick="$('#team').animatescroll({scrollSpeed:1000,easing:'easeInOutCubic'});" href="#team"><i class="fa fa-users"></i>Our Team</a></li>
+        	<li><a onclick="$('#subscribe').animatescroll({scrollSpeed:1000,easing:'easeInOutCubic'});" href="#subscribe"><i class="fa fa-envelope"></i>Subscribe</a></li>
         </ul>
       </nav>
     </aside>
@@ -76,12 +76,13 @@
       	<!-- <div class="logo"><img src="img/icon.png" width="100" height="84" alt="SelfTune"/></div> -->
         <h1>Tune yourself!</h1>
         <p>
-        Check your stress with an app<br/>
-        Relax<br/>
-        Enjoy your life<br/>
+        <i class="fa fa-dashboard"></i>&nbsp;&nbsp;Measure stress<br/>
+        <i class="fa fa-coffee"></i>&nbsp;&nbsp;Calm down<br/>
+        <i class="fa fa-search"></i>&nbsp;&nbsp;Examine<br/>
+        <i class="fa fa-bullhorn"></i>&nbsp;&nbsp;Share experience<br/>
       </p>
         <div class="buttons group">
-        	<a class="appstore-btn" href="https://itunes.apple.com/us/app/cardiomood/id741620888?ls=1&mt=8" target="_blank"></a>
+        	<a class="appstore-btn" onclick="$('#subscribe').animatescroll({scrollSpeed:1000,easing:'easeInOutCubic'});"></a>
         </div>
       </div>
     </section>
@@ -92,8 +93,10 @@
       	<div class="col-lg-6 col-lg-offset-6 col-md-7 col-md-offset-5">
           <h1>Follow Us</h1>
           <div class="social-icons si-icon-effect">
-            <a href="https://www.facebook.com/selftune" class="si-icon fa fa-facebook">Facebook</a>
-            <a href="https://twitter.com/SelfTune" class="si-icon fa fa-twitter">Twitter</a>
+            <a href="https://www.facebook.com/selftune" class="si-icon fa fa-facebook" onclick="FlurryAgent.logEvent('Facebook')" target="_blank">Facebook</a>
+            <a href="https://twitter.com/SelfTune" class="si-icon fa fa-twitter" onclick="FlurryAgent.logEvent('Twitter')" target="_blank">Twitter</a>
+            <a href="http://vk.com/self_tune" class="si-icon fa fa-vk" onclick="FlurryAgent.logEvent('VK')" target="_blank">VK</a>
+            <a href="https://vimeo.com/selftune" class="si-icon fa fa-vimeo-square" onclick="FlurryAgent.logEvent('Vimeo')" target="_blank">Vimeo</a>
           </div>
         </div> 
       </div>
@@ -104,33 +107,33 @@
       <div class="container">
       	<div class="row animation" data-animation="fadeInDown"><!--By adding/removing class "animation" we enable/disable scroll animation of current element. In attribute "data-animation" we can choose what animation to use-->
       <!--   	<h1>Features</h1> -->
-          <h1>Make your life brighter<br/>with SelfTune.</h1>
+          <h1>Make your life brighter<br/>with [self tune]</h1>
         </div>
         <div class="row">
         	<div class="col-lg-3 col-md-6 col-sm-6">
           	<div class="feature animation" data-animation="fadeInLeft"><!--By adding/removing class "animation" we enable/disable scroll animation of current element-->
-              <img src="img/img-iOS7/icons/support.png" width="203" height="203" alt="Fast Support"/>
+              <img src="img/img-iOS7/icons/measure.png" width="203" height="203" alt="Measure"/>
               <h2>Measure</h2>
               <p>Control your stress level and always stay in tune</p>
             </div>
           </div>
         	<div class="col-lg-3 col-md-6 col-sm-6">
           	<div class="feature animation" data-animation="fadeInLeft"><!--By adding/removing class "animation" we enable/disable scroll animation of current element-->
-              <img src="img/img-iOS7/icons/updates.png" width="203" height="203" alt="Regular Updates"/>
+              <img src="img/img-iOS7/icons/relax.png" width="203" height="203" alt="Relax"/>
               <h2>Relax</h2>
               <p>Use our relaxation methods to calm down</p>
             </div>
           </div>
         	<div class="col-lg-3 col-md-6 col-sm-6">
           	<div class="feature animation" data-animation="fadeInRight"><!--By adding/removing class "animation" we enable/disable scroll animation of current element-->
-              <img src="img/img-iOS7/icons/code.png" width="203" height="203" alt="Clean Code"/>
+              <img src="img/img-iOS7/icons/analyze.png" width="203" height="203" alt="Analyze"/>
               <h2>Analyze</h2>
               <p>Learn what makes you feel good and avoid what makes you feel bad</p>
             </div>
           </div>
         	<div class="col-lg-3 col-md-6 col-sm-6">
           	<div class="feature animation" data-animation="fadeInRight"><!--By adding/removing class "animation" we enable/disable scroll animation of current element-->
-              <img src="img/img-iOS7/icons/customizable.png" width="203" height="203" alt="Customizable"/>
+              <img src="img/img-iOS7/icons/share.png" width="203" height="203" alt="Socialize"/>
               <h2>Socialize</h2>
               <p>Share your perfect mood with friends</p>
             </div>
@@ -140,10 +143,10 @@
     </section>
     
     <!--About-->
-    <section class="content-block" id="about">
+    <!-- <section class="content-block" id="about">
     	<div class="container">
-      	<div class="row animation" data-animation="flipInX"><!--By adding/removing class "animation" we enable/disable scroll animation of current element-->
-        	<h1 class="white">SelfTune - way to a healthy lifestyle</h1>
+      	<div class="row animation" data-animation="flipInX"> --><!--By adding/removing class "animation" we enable/disable scroll animation of current element-->
+        	<!-- <h1 class="white">SelfTune - way to a healthy lifestyle</h1>
         </div>
         
         	<p class="white">Have you ever felt overworked or exhausted? Often experience stress and headaches? Constantly feel lack of sleep? SelfTune helps to solve these problems and to organize your life in a right way.</p>
@@ -157,43 +160,49 @@
 <p class="white">SelfTune is designed to help people look at their life from a new angle . Our goal is to teach people to take care of their emotional health, to live life to the fullest and enjoy every moment!</p>
         
       </div>
-    </section>
+    </section> -->
     
     <!--Team-->
-    <section class="content-block white" id="team">
+    <section class="content-block" id="team">
     	<div class="container">
       	<div class="row animation" data-animation="fadeInUp"><!--By adding/removing class "animation" we enable/disable scroll animation of current element-->
-        	<h1>Our Team</h1>
-          <h2>We're a small startup located in Moscow, Russia.</h2>
+        	<h1 class="white">Our Team</h1>
+          <h2 class="white">We're a small startup located in Moscow, Russia.</h2>
         </div>
         <div class="row">
-        	<div class="col-lg-3 col-md-6 col-sm-6 animation" data-animation="fadeInLeft"><!--By adding/removing class "animation" we enable/disable scroll animation of current element-->
+        	<div class="col-lg-4 col-md-6 col-sm-6 animation" data-animation="fadeInLeft"><!--By adding/removing class "animation" we enable/disable scroll animation of current element-->
           	<div class="team">
               <img src="img/team/yury.png" width="248" height="248" alt="Yury Pogrebnyak"/>
-              <h2>Yury<br/>Pogrebnyak</h2>
+              <h2 class="white">Yury<br/>Pogrebnyak</h2>
               <!-- <h3>CEO,<br/>John Doe Corporation</h3> -->
               <div class="social-icons si-icon-effect">
-                <a href="https://www.facebook.com/yuriy.pogrebnyak" class="si-icon fa fa-facebook">Facebook</a>
+                <a href="https://www.facebook.com/yuriy.pogrebnyak" class="si-icon fa fa-facebook" target="_blank">Facebook</a>
+                <a href="http://vk.com/id18772383" class="si-icon fa fa-vk" target="_blank">VK</a>
+                <a href="http://www.linkedin.com/pub/yury-pogrebnyak/58/a10/86" class="si-icon fa fa-linkedin" target="_blank">LinkedIn</a>
               </div>
             </div>
           </div>
-        	<div class="col-lg-3 col-md-6 col-sm-6 animation" data-animation="fadeIn"><!--By adding/removing class "animation" we enable/disable scroll animation of current element-->
+        	<div class="col-lg-4 col-md-6 col-sm-6 animation" data-animation="fadeIn"><!--By adding/removing class "animation" we enable/disable scroll animation of current element-->
           	<div class="team">
               <img src="img/team/alex.png" width="248" height="248" alt="Alex Taraymovich"/>
-              <h2>Alex<br/>Taraymovich</h2>
+              <h2 class="white">Alex<br/>Taraymovich</h2>
               <!-- <h3>ART,<br/>John Doe Corporation</h3> -->
               <div class="social-icons si-icon-effect">
-                <a href="https://www.facebook.com/alexander.taraymovich" class="si-icon fa fa-facebook">Facebook</a>
+                <a href="https://www.facebook.com/alexander.taraymovich" class="si-icon fa fa-facebook" target="_blank">Facebook</a>
+                <a href="http://vk.com/alexander_tar" class="si-icon fa fa-vk" target="_blank">VK</a>
+                <a href="http://www.linkedin.com/pub/alexander-taraymovich/50/16/3b5" class="si-icon fa fa-linkedin" target="_blank">LinkedIn</a>
               </div>
             </div>
           </div>
-        	<div class="col-lg-3 col-md-6 col-sm-6 animation" data-animation="fadeInRight"><!--By adding/removing class "animation" we enable/disable scroll animation of current element-->
+        	<div class="col-lg-4 col-md-6 col-sm-6 animation" data-animation="fadeInRight"><!--By adding/removing class "animation" we enable/disable scroll animation of current element-->
           	<div class="team">
               <img src="img/team/vasily.png" width="248" height="248" alt="Vasily Ruzov"/>
-              <h2>Vasily<br/>Ruzov</h2>
+              <h2 class="white">Vasily<br/>Ruzov</h2>
               <!-- <h3>Manager,<br/>John Doe Corporation</h3> -->
               <div class="social-icons si-icon-effect">
-                <a href="https://www.facebook.com/vasilij.ruzov" class="si-icon fa fa-facebook">Facebook</a>
+                <a href="https://www.facebook.com/vasilij.ruzov" class="si-icon fa fa-facebook" target="_blank">Facebook</a>
+                <a href="http://vk.com/ruzovvo" class="si-icon fa fa-vk" target="_blank">VK</a>
+                <a href="http://www.linkedin.com/pub/vasilii-ruzov/66/843/449" class="si-icon fa fa-linkedin" target="_blank">LinkedIn</a>
               </div>
             </div>
           </div>
@@ -236,12 +245,15 @@
           <span>Enter your Email. It's spam free</span>
         </div>
         <div class="row">
-          <form method="post" class="subscription-form">
+          <form method="post" class="subscription-form" id="subscription-form">
             <input type="email" id="email" name="email">
             <input class="fa fa-arrow-circle-right" type="submit" id="submit" value="&#xf0a9;">
             <div class="errors">
               <span id="error1">Enter Valid Email Adress</span>
               <span id="error2">Invalid Email Adress</span>
+            </div>
+            <div class="success">
+              <span id="success1">Great! Success!</span>
             </div>
           </form>
         </div>
@@ -251,23 +263,31 @@
     <!--Footer-->
     <footer>
     	<div class="container">
-      	<div class="row">
-        	<div class="col-lg-6 col-md-6">
+      	<div class="row"> 
+          <div class="col-lg-6 col-md-6">
           	<div class="copyright">
 <!--               <img src="img/img-iOS7/footer-logo.png" width="366" height="163" alt="SelfTune"/> -->
-              <span>&copy; 2014 SelfTune.</span>
+              <span>&copy; 2014 [self tune].</span>
             </div>
           </div>
           <div class="col-lg-6 col-md-6">
             <div class="social-icons si-icon-effect">
-              <a href="https://www.facebook.com/selftune" class="si-icon fa fa-facebook">Facebook</a>
-              <a href="https://twitter.com/SelfTune" class="si-icon fa fa-twitter">Twitter</a>
+              <a href="https://www.facebook.com/selftune" class="si-icon fa fa-facebook" onclick="FlurryAgent.logEvent('Facebook')" target="_blank">Facebook</a>
+              <a href="https://twitter.com/SelfTune" class="si-icon fa fa-twitter" onclick="FlurryAgent.logEvent('Twitter')" target="_blank">Twitter</a>
+              <a href="http://vk.com/self_tune" class="si-icon fa fa-vk" onclick="FlurryAgent.logEvent('VK')" target="_blank">VK</a>
+              <a href="https://vimeo.com/selftune" class="si-icon fa fa-vimeo-square" onclick="FlurryAgent.logEvent('Vimeo')" target="_blank">Vimeo</a>
             </div>
-          </div> 
+          </div>
         </div>
       </div>
     </footer>
     
+    <!--Javascript (Parse)-->
+    <script src="js/parse-1.2.16.min.js"></script>
+
+    <!--Javascript (Flurry)-->
+    <script src="js/flurry.js"></script>
+
     <!--Javascript (jQuery)-->
 		<script src="js/jquery-1.10.2.min.js"></script>
 		<script src="js/jquery.easing.1.3.js"></script>
