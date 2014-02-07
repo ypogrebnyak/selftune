@@ -1,298 +1,303 @@
-<!DOCTYPE html>
-<html class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-        <title>SelfTune</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+<!doctype html>
+<!--[if IE 9]><html lang="en" class="ie ie9"><![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>[self tune]</title>
+    <meta name="description" content="[self tune] - tune yourlsef!" />
+		<meta name="keywords" content="stress, mood, wellness, calmness, health, emotions, happiness, productivity, rest, refill" />
+		<meta name="author" content="[self tune]" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!--Favicon-->
+    <link rel="shortcut icon" href="img/icon_small.png" type="image/x-icon">
+    <link rel="icon" href="img/icon_small.png" type="image/x-icon">
+    <!--Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,600' rel='stylesheet' type='text/css'>
+    <!--Bootstrap 3.0.3-->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!--Icons Fonts-->
+    <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
+    <link href="css/iconmoon.css" rel="stylesheet" media="screen">
+    <!--Animations-->
+    <link href="css/animate.css" rel="stylesheet" media="screen">
+    <!-- Custom styles -->
+    <link href="css/style-iOS7.css" rel="stylesheet" media="screen">
+    <!--Modernizr-->
+		<script src="js/modernizr.custom.js"></script>
+    <!--[if lt IE 9]>
+      <script src="js/respond.min.js"></script>
+      <link href="css/ie8/style-iOS7-ie8.css" rel="stylesheet" media="screen">
+    <![endif]-->
+  </head>
+  
+  <!--Body-->
+  <body class="parallax" data-stellar-background-ratio="2"><!--By adding Parallax Class we enable Background Parallax effect-->
+  
+  	<!-- Preloader -->
+    <div id="preloader">
+      <div id="status">&nbsp;</div>
+    </div>
 
-        <link rel="stylesheet" href="css/main.css">
+    <!--Side Menu-->
+    <aside class="side-menu">
+    	<span class="menu-toggle animated"></span><!--By adding/removing class "animated" we enable/disable page load animations. To change the type of animation go to scripts-VersionName.js to section "Preloading Animation"-->
+      <nav>
+      	<ul>
+        	<li class="active"><a onclick="$('body').animatescroll({scrollSpeed:1000,easing:'easeInOutCubic'});" href="#home"><i class="fa fa-home"></i>Home</a></li>
+        	<li><a onclick="$('#features').animatescroll({scrollSpeed:1000,easing:'easeInOutCubic'});" href="#features"><i class="fa fa-magic"></i>Features</a></li>
+        	<!-- <li><a onclick="$('#about').animatescroll({scrollSpeed:1000,easing:'easeInOutCubic'});" href="#about"><i class="fa fa-info-circle"></i>About</a></li> -->
+        	<li><a onclick="$('#team').animatescroll({scrollSpeed:1000,easing:'easeInOutCubic'});" href="#team"><i class="fa fa-users"></i>Our Team</a></li>
+        	<li><a onclick="$('#subscribe').animatescroll({scrollSpeed:1000,easing:'easeInOutCubic'});" href="#subscribe"><i class="fa fa-envelope"></i>Subscribe</a></li>
+        </ul>
+      </nav>
+    </aside>
+    
+    <!--App Showcase-->
+    <section class="app-showcase container" id="home">
+    	<div class="col-lg-5 col-lg-offset-1 col-md-5">
+      	
+        <!--Presentation Slideshow-->
+        <div id="phone" class="animated"><!--By adding/removing class "animated" we enable/disable page load animations-->
+          <div class="slideshow">
+            <ul>
+              <li><img src="img/screenshots/screen1.png" width="223" height="395"  alt="Screen 1"/></li>
+              <li><img src="img/screenshots/screen2.png" width="223" height="395"  alt="Screen 2"/></li>
+              <li><img src="img/screenshots/screen3.png" width="223" height="395"  alt="Screen 3"/></li>
+            </ul>
+          </div>
+          <div class="controls group">
+            <span class="prev"></span>
+            <span>Preview</span>
+            <span class="next"></span>
+          </div>
+        </div>
+      </div>
+    	<div class="col-lg-6 col-md-7 info-block animated"><!--By adding/removing class "animated" we enable/disable page load animations-->
+      	<!-- <div class="logo"><img src="img/icon.png" width="100" height="84" alt="SelfTune"/></div> -->
+        <h1>Tune yourself!</h1>
+        <p class="text-center">
+        <i class="fa fa-dashboard"></i>&nbsp;&nbsp;Measure stress<br/>
+        <i class="fa fa-coffee"></i>&nbsp;&nbsp;Calm down<br/>
+        <i class="fa fa-search"></i>&nbsp;&nbsp;Examine<br/>
+        <i class="fa fa-bullhorn"></i>&nbsp;&nbsp;Share experience<br/>
+      </p>
+        <div class="buttons group">
+        	<a class="appstore-btn" onclick="$('#subscribe').animatescroll({scrollSpeed:1000,easing:'easeInOutCubic'});"></a>
+        </div>
+      </div>
+    </section>
+    
+    <!--Social Networks-->
+    <section class="social">
+    	<div class="container animated"><!--By adding/removing class "animated" we enable/disable page load animations-->
+      	<div class="col-lg-6 col-lg-offset-6 col-md-7 col-md-offset-5">
+          <h1>Follow Us</h1>
+          <div class="social-icons si-icon-effect">
+            <a href="https://www.facebook.com/selftune" class="si-icon fa fa-facebook" onclick="FlurryAgent.logEvent('Facebook')" target="_blank">Facebook</a>
+            <a href="https://twitter.com/SelfTune" class="si-icon fa fa-twitter" onclick="FlurryAgent.logEvent('Twitter')" target="_blank">Twitter</a>
+            <a href="http://vk.com/self_tune" class="si-icon fa fa-vk" onclick="FlurryAgent.logEvent('VK')" target="_blank">VK</a>
+            <a href="https://vimeo.com/selftune" class="si-icon fa fa-vimeo-square" onclick="FlurryAgent.logEvent('Vimeo')" target="_blank">Vimeo</a>
+          </div>
+        </div> 
+      </div>
+    </section>
 
-        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
-
-        <script src="js/parse.js" type="text/javascript"></script>
-
-        <script src="docs/assets/js/jquery.js" type="text/javascript"></script>
-        
-        <script src="js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="js/bootstrap-popover.js" type="text/javascript"></script>
-
-        <script src=”https://cdn.flurry.com/js/flurry.js”></script>
-        <script>FlurryAgent.startSession(“D2GMFYGT52SZG24X7BNG”);</script>
-
-       <!-- <link rel="stylesheet" href="css/bootstrap.css"/>
-        <link rel="stylesheet" href="css/bootstro.css"/>
-
-
-
-        
-        <script src="js/bootstro.js" type="text/javascript"></script>-->
-
-       <style> 
-
-            .myTooltip{
-                width: 350px; 
-                /*                height: 350px; */
-                display: inline-block;
-            }
-
-            .bootstro-highlight{
-                border-radius: 20px;
-            }
-
-            #contact-label {
-                display: none;
-                font-size: 18px;
-            }
-
-            .download-form .input {
-                width: 400px;
-                height: 50px;
-                line-height: 30px;
-                font-size: 26px;
-                color: #444444;
-                padding: 0px 26px 0px 26px;
-
-                border: 1px solid #ccc;
-                -webkit-box-shadow: inset 0 1px 0 #eee,#fff 0 1px 0,inset 0 1px 6px rgba(0,0,0,0.15);
-                -moz-box-shadow: inset 0 1px 0 #eee,#fff 0 1px 0,inset 0 1px 6px rgba(0,0,0,0.15);
-                box-shadow: inset 0 1px 0 #eee,#fff 0 1px 0,inset 0 1px 6px rgba(0,0,0,0.15);
-                box-sizing: border-box;
-            }
-
-
-            .download-form .submit-button {
-                background: url(./img/sarrow.png) no-repeat;
-                background-size: cover;
-                height: 50px;
-                width: 50px;
-                background-size: 100% 100%;
-                border-radius: 10px;
-                /*                border: 0;c*/
-                cursor: pointer;
-            }
-
-            textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {
-                border-color: rgba(82,168,236,0.8);
-                outline: 0;
-                outline: thin dotted 9;
-                -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(82,168,236,.6);
-                -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(82,168,236,.6);
-                box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(82,168,236,.6);
-            }
-
-            .download-form{
-                font-size: 22px;
-                font-weight: 300;
-                line-height: 1.3;
-                color: #555;
-            }
-
-            #submit-contact:hover{
-                opacity: 0.8;
-            }
-
-        </style>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
-        <![endif]-->
-
-        <header id="header">
-            <div class="container">
-                <div class="navbar">
-                    <!--                    SelfTune-->
-                    <a class="brand" id="logo" href="index.html">SelfTune</a>
-                    <span class="brand">
-                        SelfTune
-                    </span>
-                    <ul>
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
+    <!--Features-->
+    <section class="content-block white" id="features">
+      <div class="container">
+      	<div class="row animation" data-animation="fadeInDown"><!--By adding/removing class "animation" we enable/disable scroll animation of current element. In attribute "data-animation" we can choose what animation to use-->
+      <!--   	<h1>Features</h1> -->
+          <h1>Make your life brighter<br/>with [self tune]</h1>
+        </div>
+        <div class="row">
+        	<div class="col-lg-3 col-md-6 col-sm-6">
+          	<div class="feature animation" data-animation="fadeInLeft"><!--By adding/removing class "animation" we enable/disable scroll animation of current element-->
+              <img src="img/img-iOS7/icons/measure.png" width="203" height="203" alt="Measure"/>
+              <h2>Measure</h2>
+              <p class="text-center">Control your stress level and always stay in tune</p>
             </div>
-        </header> <!-- /#header -->
-
-        <div class="container" role="main">
-
-            <div class="row">
-
-
-                <div class="span6 feature">
-                    <h1 id="firstTitle" >Defeat your <span style="color: #fb5359" >stress</span> !</h1>
-                    <br/>
-
-                    <ul class="intro">
-                        <li class="intro">Check your stress with sensor and app</li>
-                        <li class="intro">Make personalized relaxation exercises to defeat it</li>
-                        <li class="intro">Have a good <b style="color: #fb5359; font-weight: bold;" >SelfTune</b>!</li>
-                    </ul>                    
-
-                    <div class="clearfix">
-
-                    </div>
-
-                    <div class="download-form" style="margin-top: 40px;" >
-                        <div id="send-link">
-                            <label for="contact" id="contact-label">Enter your phone # or email</label>
-                            <input id="contact" class="input" type="text" name="contact" placeholder="Sign up to get the free app"/>
-                            <input id="submit-contact" type="button" class="submit-button" name="submit" tabindex="9" style="margin-top: -8px"/>
-                            <div id="error" style="display: none; color: #fb5359; margin-top: 12px">Please enter a valid email address!</div>
-                            <div id="success" style="display: none; margin-top: 12px">You have successfully signed up!</div>
-                        </div>
-                        <div class="ctaColumn">
-                            <a onclick="yaCounter23657182.reachGoal('AppStoreClick'); return true;" href="https://itunes.apple.com/us/app/cardiomood/id741620888?ls=1&mt=8" ><img style="width: 190px; margin-top: 10px" src="./img/appStore_Btn@2x.png"></a>
-                        </div>
-                        <div id="link-sent">
-                        </div>
-                    </div>
-
-                </div><!-- /feature -->
-
-                <div class="span6 feature-right">
-                    <div class="iphone5">
-                        <div class="iphone5-screen">
-                            <div id="appCarousel" class="carousel slide">
-                                <!-- Carousel items -->
-                                <div class="carousel-inner">
-                                    <div class="active item"><img src="img/screen1.png" alt="" /></div>
-                                    <div class="item"><img src="img/screen2.png" alt="" /></div>
-                                    <div class="item"><img src="img/screen3.png" alt="" /></div>
-                                </div>
-                                <!-- Carousel nav -->
-                                <a class="carousel-control left" href="#appCarousel" data-slide="prev">&lsaquo;</a>
-                                <a class="carousel-control right" href="#appCarousel" data-slide="next">&rsaquo;</a>
-                            </div>
-                        </div><!-- /carousel -->
-                        <div class="iphone5-glare" style=""></div>
-                    </div><!-- /iphone -->
-                </div>                    
-
+          </div>
+        	<div class="col-lg-3 col-md-6 col-sm-6">
+          	<div class="feature animation" data-animation="fadeInLeft"><!--By adding/removing class "animation" we enable/disable scroll animation of current element-->
+              <img src="img/img-iOS7/icons/relax.png" width="203" height="203" alt="Relax"/>
+              <h2>Relax</h2>
+              <p class="text-center">Use our relaxation methods to calm down</p>
             </div>
-
-
-            <footer>
-                <p>© 2014 SelfTune <a class="active" href="index.html">Home</a> <a href="about.html">About</a> <a href="blog.html">Blog</a><a href="contact.html">Contact</a></p>
-            </footer>
-
-        </div> <!-- /container -->
-
-
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
-
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
-        <script>
-            
-            //<![CDATA[
-            
-            function initSubscription(){
-                var applicationId = "SSzU4YxI6Z6SwvfNc2vkZhYQYl86CvBpd3P2wHF1";
-                var javaScriptKey = "0ppjIVaWy3aqHyGEA95InejakxRELOMrePgRfREt";
-                Parse.initialize(applicationId, javaScriptKey);
-                $('#submit-contact').click(function(){
-                    var email = $('#contact').val();
-                    console.log(email);
-                    addEmail(email);
-                });
-                
-            }
-            
-            function validateEmail(email) {
-                if (email == undefined || email == ''){
-                    return false;
-                }
-                var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-                return re.test(email);
-            }
-            
-            
-            function addEmail(email){
-                if (!validateEmail(email)){
-                    console.log('email is not valid');
-                    $('#error').show();
-                    $('#success').hide();
-                    return;
-                }
-                var Subscription = Parse.Object.extend("Subscription");
-                var query = new Parse.Query(Subscription);
-                var sub = new Subscription();
-                
-                
-                sub.set("email", email);
-                sub.save().then(function(){
-                    $('#error').hide();
-                    $('#success').show();
-                });
-                
-            }
-            
-            function initTour(){
-                tourIsShown = false;
-                tourIsClosed = false;
-                lastScrollTop = 0;
-                var win = $(window);
-                win.scroll(function(e){
-                    var top = $(window).scrollTop();
-                    //                    if (tourIsShown){
-                    //                        return;
-                    //                    }
-                    if((top>400) && (tourIsShown == false) )
-                    {
-                        tourIsShown = true;
-                        bootstro.start(null, 
-                        {
-                            onExit: function(){
-                                tourIsClosed = true;
-                            }
-                        }
-                    );
-                    }
-                    
-                    //                    var st = $(this).scrollTop();
-                    //                    
-                    //                    if ((tourIsShown == true) && (tourIsClosed == false)){
-                    //                        console.log('st = ' + st);
-                    //                        if (st > lastScrollTop + 60){
-                    //                            console.log('scroll back');
-                    //                            bootstro.prev();
-                    //                        } 
-                    //                        if (st < lastScrollTop - 60){
-                    //                            console.log('scroll forward');
-                    //                            bootstro.next();
-                    //                        }
-                    //                    }
-                    //                    lastScrollTop = st;
-                    
-                });
-                
-            }
-            
-            $(function(){
-                initSubscription();
-                // Stop showing the tour
-                // initTour();
-                //                $('#howItWorksButton').click(function(){
-                //                    //                    scrNum++;
-                //                    //                    if (scrNum == 1){
-                //                    bootstro.start();
-                //                    
-                //                    //                    }
-                //                });
-            });
+          </div>
+          <div class="clearfix visible-sm"></div>
+        	<div class="col-lg-3 col-md-6 col-sm-6">
+          	<div class="feature animation" data-animation="fadeInRight"><!--By adding/removing class "animation" we enable/disable scroll animation of current element-->
+              <img src="img/img-iOS7/icons/analyze.png" width="203" height="203" alt="Analyze"/>
+              <h2>Analyze</h2>
+              <p class="text-center">Learn what makes you feel good and avoid what makes you feel bad</p>
+            </div>
+          </div>
+        	<div class="col-lg-3 col-md-6 col-sm-6">
+          	<div class="feature animation" data-animation="fadeInRight"><!--By adding/removing class "animation" we enable/disable scroll animation of current element-->
+              <img src="img/img-iOS7/icons/share.png" width="203" height="203" alt="Socialize"/>
+              <h2>Socialize</h2>
+              <p class="text-center">Share your perfect mood with friends</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!--About-->
+    <!-- <section class="content-block" id="about">
+    	<div class="container">
+      	<div class="row animation" data-animation="flipInX"> --><!--By adding/removing class "animation" we enable/disable scroll animation of current element-->
+        	<!-- <h1 class="white">SelfTune - way to a healthy lifestyle</h1>
+        </div>
         
-            //]]>
-            
-        </script>
+        	<p class="white">Have you ever felt overworked or exhausted? Often experience stress and headaches? Constantly feel lack of sleep? SelfTune helps to solve these problems and to organize your life in a right way.</p>
 
+<p class="white">We analyze your heart rate and give advice to improve your life quality. You'll be able to work more efficiently, always be in a good shape and good mood, be prosperous and enjoy your life. We will teach you to properly organize your day, to wisely choose a time for work and rest, to balance your intellectual and physical activities. And, most importantly - all this is personalized on the basis of your heart rate.</p>
 
-    </body>
+<p class="white">All you need to start is a smartphone and a heart rate sensor - for example, Polar H7. With the help of mobile app and a sensor you should make regular measurements of 2-5 minutes, and the system itself will start giving advice to you. Over time, these recommendations will be more accurate and, following them, you can experience their positive effect!</p>
+
+<p class="white">At the core of SelfTune is a modern heart rate variability methodology, actively﻿ used throughout the world. With the help of advanced algorithms developed by us, we give you the most customized and personalized advice.</p>
+
+<p class="white">SelfTune is designed to help people look at their life from a new angle . Our goal is to teach people to take care of their emotional health, to live life to the fullest and enjoy every moment!</p>
+        
+      </div>
+    </section> -->
+    
+    <!--Team-->
+    <section class="content-block" id="team">
+    	<div class="container">
+      	<div class="row animation" data-animation="fadeInUp"><!--By adding/removing class "animation" we enable/disable scroll animation of current element-->
+        	<h1 class="white">Our Team</h1>
+          <h2 class="white">We're a small startup located in Moscow, Russia.</h2>
+        </div>
+        <div class="row">
+        	<div class="col-lg-4 col-md-4 col-sm-6 animation" data-animation="fadeInLeft"><!--By adding/removing class "animation" we enable/disable scroll animation of current element-->
+          	<div class="team">
+              <img src="img/team/yury.png" width="248" height="248" alt="Yury Pogrebnyak"/>
+              <h2 class="white">Yury<br/>Pogrebnyak</h2>
+              <!-- <h3>CEO,<br/>John Doe Corporation</h3> -->
+              <div class="social-icons si-icon-effect">
+                <a href="https://www.facebook.com/yuriy.pogrebnyak" class="si-icon fa fa-facebook" target="_blank">Facebook</a>
+                <a href="http://vk.com/id18772383" class="si-icon fa fa-vk" target="_blank">VK</a>
+                <a href="http://www.linkedin.com/pub/yury-pogrebnyak/58/a10/86" class="si-icon fa fa-linkedin" target="_blank">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        	<div class="col-lg-4 col-md-4 col-sm-6 animation" data-animation="fadeIn"><!--By adding/removing class "animation" we enable/disable scroll animation of current element-->
+          	<div class="team">
+              <img src="img/team/alex.png" width="248" height="248" alt="Alex Taraymovich"/>
+              <h2 class="white">Alex<br/>Taraymovich</h2>
+              <!-- <h3>ART,<br/>John Doe Corporation</h3> -->
+              <div class="social-icons si-icon-effect">
+                <a href="https://www.facebook.com/alexander.taraymovich" class="si-icon fa fa-facebook" target="_blank">Facebook</a>
+                <a href="http://vk.com/alexander_tar" class="si-icon fa fa-vk" target="_blank">VK</a>
+                <a href="http://www.linkedin.com/pub/alexander-taraymovich/50/16/3b5" class="si-icon fa fa-linkedin" target="_blank">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        	<div class="col-lg-4 col-md-4 col-sm-12 animation" data-animation="fadeInRight"><!--By adding/removing class "animation" we enable/disable scroll animation of current element-->
+          	<div class="team">
+              <img src="img/team/vasily.png" width="248" height="248" alt="Vasily Ruzov"/>
+              <h2 class="white">Vasily<br/>Ruzov</h2>
+              <!-- <h3>Manager,<br/>John Doe Corporation</h3> -->
+              <div class="social-icons si-icon-effect">
+                <a href="https://www.facebook.com/vasilij.ruzov" class="si-icon fa fa-facebook" target="_blank">Facebook</a>
+                <a href="http://vk.com/ruzovvo" class="si-icon fa fa-vk" target="_blank">VK</a>
+                <a href="http://www.linkedin.com/pub/vasilii-ruzov/66/843/449" class="si-icon fa fa-linkedin" target="_blank">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!--Clients-->
+<!--     <section class="clients">
+      <div class="container animation" data-animation="bounceIn">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <a href="#"><img src="img/img-iOS7/clients/wordpress.png" width="262" height="74" alt="Facebook"/></a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <a href="#"><img src="img/img-iOS7/clients/jquery.png" width="262" height="74" alt="Samsung"/></a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <a href="#"><img src="img/img-iOS7/clients/woocommerce.png" width="262" height="74" alt="Blackberry"/></a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <a href="#"><img src="img/img-iOS7/clients/envato.png" width="262" height="74" alt="Google"/></a>
+        </div>
+      </div>
+    </section> -->
+    
+    <!--Gallery-->
+<!--     <section class="gallery animation" id="gallery" data-animation="fadeInUp">
+    	<ul>
+      	<li class="violet"><img src="img/img-iOS7/gallery/1.jpg" width="1400" height="900" alt="Gallery1"/></li>
+      	<li class="dark-blue"><img src="img/img-iOS7/gallery/2.jpg" width="1400" height="900" alt="Gallery2"/></li>
+      	<li class="red"><img src="img/img-iOS7/gallery/3.jpg" width="1400" height="900" alt="Gallery3"/></li>
+      </ul>
+    </section> -->
+    
+    <!--Subscription-->
+    <section class="subscribe" id="subscribe">
+    	<div class="container">
+      	<div class="row">
+        	<h1 class="white">Subscribe for our news</h1>
+          <span>Enter your Email. It's spam free</span>
+        </div>
+        <div class="row">
+          <form method="post" class="subscription-form" id="subscription-form">
+            <input type="email" id="email" name="email">
+            <input class="fa fa-arrow-circle-right" type="submit" id="submit" value="&#xf0a9;">
+            <div class="errors">
+              <span id="error1">Enter Valid Email Adress</span>
+              <span id="error2">Invalid Email Adress</span>
+            </div>
+            <div class="success">
+              <span id="success1">Great! Success!</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    
+    <!--Footer-->
+    <footer>
+    	<div class="container">
+      	<div class="row"> 
+          <div class="col-lg-6 col-md-6">
+          	<div class="copyright">
+<!--               <img src="img/img-iOS7/footer-logo.png" width="366" height="163" alt="SelfTune"/> -->
+              <span>&copy; 2014 [self tune].</span>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="social-icons si-icon-effect">
+              <a href="https://www.facebook.com/selftune" class="si-icon fa fa-facebook" onclick="FlurryAgent.logEvent('Facebook')" target="_blank">Facebook</a>
+              <a href="https://twitter.com/SelfTune" class="si-icon fa fa-twitter" onclick="FlurryAgent.logEvent('Twitter')" target="_blank">Twitter</a>
+              <a href="http://vk.com/self_tune" class="si-icon fa fa-vk" onclick="FlurryAgent.logEvent('VK')" target="_blank">VK</a>
+              <a href="https://vimeo.com/selftune" class="si-icon fa fa-vimeo-square" onclick="FlurryAgent.logEvent('Vimeo')" target="_blank">Vimeo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <!--Javascript (Parse)-->
+    <script src="js/parse-1.2.16.min.js"></script>
+
+    <!--Javascript (Flurry)-->
+    <script src="js/flurry.js"></script>
+
+    <!--Javascript (jQuery)-->
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="js/stellar.min.js"></script>
+		<script src="js/waypoints.min.js"></script>
+		<script src="js/jquery.bxslider.min.js"></script>
+		<script src="js/icons-hover.js"></script>
+		<script src="js/animatescroll.js"></script>
+		<script src="js/scripts-iOS7.js"></script>
+    
+  </body><!--/Body-->
 </html>
-
