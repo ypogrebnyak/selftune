@@ -164,17 +164,31 @@ p {
 
 /*App Showcase Right Block*/
 .app-showcase {
-	padding-top: 120px;
+	padding-top: 40px;
 }
 .logo {
-	margin-bottom: 20px;
-	width: 276px;
-	height: 86px;
+	margin-bottom: 30px;
+	padding-left: 40px;
+	width: 112;
+	height: 112px;
 }
 .logo img {
 	max-width: 100%;
 	height: auto;
 }
+
+.brand {
+	margin-top: 20px;
+	margin-bottom: 30px;
+	width: 300;
+	height: 72px;
+}
+
+.brand img {
+	max-width: 100%;
+	height: auto;
+}
+
 .app-showcase h1 {
 	font-size: 2.25em;
 	color: #fff;
@@ -907,12 +921,26 @@ footer .social-icons {
 	#phone { margin: 60px auto 100px auto; }
 	.logo {
 		width: 100%;
-		position: absolute;
-		top: -800px;
-		margin-left: -15px;
+		margin-bottom: 30px;
+		padding-left: 10px;
+		height: 112px;
 	}
 	.logo img {
-		display: block;
+		max-width: 100%;
+		height: auto;
+		display: table;
+		margin: auto;
+	}
+	.brand {
+		width: 100%;
+		margin-bottom: 30px;
+		padding-left: 10px;
+		height: 112px;
+	}
+	.brand img {
+		max-width: 100%;
+		height: auto;
+		display: table;
 		margin: auto;
 	}
 	.app-showcase h1, .social h1 { text-align: center; }
@@ -961,8 +989,32 @@ footer .social-icons {
 	
 	.svg .menu-toggle,
 	.no-svg .menu-toggle { top: 20px; }
-	#phone { margin: 110px auto 100px auto; }
-	.logo { top: -800px; }
+	#phone { margin: 60px auto 100px auto; }
+
+	.logo {
+		width: 100%;
+		margin-bottom: 30px;
+		padding-left: 0px;
+		height: 112px;
+	}
+	.logo img {
+		max-width: 100%;
+		height: auto;
+		display: table;
+		margin: auto;
+	}
+	.brand {
+		width: 100%;
+		margin-bottom: 30px;
+		padding-left: 0px;
+		height: 112px;
+	}
+	.brand img {
+		max-width: 100%;
+		height: auto;
+		display: table;
+		margin: auto;
+	}
 	.buttons { padding-left: 22%; }
 	.buy-btn {
 		font-size: 0.9em;
@@ -983,10 +1035,6 @@ footer .social-icons {
 .info-block {
 	line-height: 44px;
 	font-size: 24px;
-}
-
-.fa {
-	padding-right: 6px;
 }
 
 .fa-coffee {
