@@ -1021,6 +1021,12 @@ footer .social-icons {
 		padding: 18px 40px 18px 27px;
 	}
 	.buy-btn i { margin-right: 24px; }
+	.si-icon,
+	.im-icon-s,
+	.im-icon-m,
+	.im-icon-l {
+		margin: 20px 10px 0 10px;
+	}
 }
 
 @media screen and (max-width: 340px) {
@@ -1028,6 +1034,12 @@ footer .social-icons {
 	#phone { margin-left: -25px; }
 	.buttons { padding-left: 17%; }
 	.bx-wrapper .bx-pager { margin-top: -25px; }
+	.si-icon,
+	.im-icon-s,
+	.im-icon-m,
+	.im-icon-l {
+		margin: 20px 10px 0 10px;
+	}
 }
 
 /* Added by us */
