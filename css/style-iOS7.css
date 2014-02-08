@@ -977,3 +977,30 @@ footer .social-icons {
 	.buttons { padding-left: 17%; }
 	.bx-wrapper .bx-pager { margin-top: -25px; }
 }
+
+/* Added by us */
+
+.info-block {
+	line-height: 44px;
+	font-size: 24px;
+}
+
+.fa {
+	padding-right: 6px;
+}
+
+.fa-coffee {
+	padding-right: 6px;
+}
+
+.fa-dashboard {
+	padding-right: 8px;
+}
+
+.fa-search {
+	padding-right: 10px;
+}
+
+.fa-bullhorn {
+	padding-right: 8px;
+}
