@@ -205,8 +205,8 @@ p {
 .appstore-btn,
 .icloud-btn {
 	display: block;
-	width: 164px;
-	height: 164px;
+	width: 240px;
+	height: 100px;
 	float: left;
 	margin: 0 30px 30px 0;
 	background: transparent url(../img/img-iOS7/appstore.png) no-repeat center center;
