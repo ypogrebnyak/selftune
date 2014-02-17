@@ -183,6 +183,7 @@ $(document).ready(function(e) {
 		        
 		        sub.save("email", email).then(function(){
 		        	FlurryAgent.logEvent("Subscription");
+		        	ga('send', 'event', 'button', 'click', 'Subscription');
         		});
 		    }
 		  },

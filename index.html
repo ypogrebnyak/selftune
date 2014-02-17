@@ -93,7 +93,7 @@
         <i class="fa fa-bullhorn"></i>Share experience with friends<br/>
       </p>
         <div class="buttons group" style="margin-top: 40px">
-        	<a class="appstore-btn" onclick="$('#subscribe').animatescroll({scrollSpeed:1000,easing:'easeInOutCubic'});FlurryAgent.logEvent('AppStoreClick');"></a>
+        	<a class="appstore-btn" onclick="$('#subscribe').animatescroll({scrollSpeed:1000,easing:'easeInOutCubic'});FlurryAgent.logEvent('AppStoreClick');ga('send', 'event', 'button', 'click', 'App Store');"></a>
         </div>
       </div>
     </section>
@@ -105,10 +105,10 @@
       	<div class="col-lg-6 col-lg-offset-6 col-md-offset-5 col-md-6 col-sm-12 col-xs-12">
           <h1>Follow Us</h1>
           <div class="social-icons si-icon-effect">
-            <a href="https://www.facebook.com/selftune" class="si-icon fa fa-facebook" onclick="FlurryAgent.logEvent('Facebook')" target="_blank">Facebook</a>
-            <a href="https://twitter.com/SelfTune" class="si-icon fa fa-twitter" onclick="FlurryAgent.logEvent('Twitter')" target="_blank">Twitter</a>
-            <a href="http://vk.com/self_tune" class="si-icon fa fa-vk" onclick="FlurryAgent.logEvent('VK')" target="_blank">VK</a>
-            <a href="https://vimeo.com/channels/selftune" class="si-icon fa fa-vimeo-square" onclick="FlurryAgent.logEvent('Vimeo')" target="_blank">Vimeo</a>
+            <a href="https://www.facebook.com/selftune" class="si-icon fa fa-facebook" onclick="FlurryAgent.logEvent('Facebook');ga('send', 'event', 'button', 'click', 'Facebook');" target="_blank">Facebook</a>
+            <a href="https://twitter.com/SelfTune" class="si-icon fa fa-twitter" onclick="FlurryAgent.logEvent('Twitter');ga('send', 'event', 'button', 'click', 'Twitter');" target="_blank">Twitter</a>
+            <a href="http://vk.com/self_tune" class="si-icon fa fa-vk" onclick="FlurryAgent.logEvent('VK');ga('send', 'event', 'button', 'click', 'VK');" target="_blank">VK</a>
+            <a href="https://vimeo.com/channels/selftune" class="si-icon fa fa-vimeo-square" onclick="FlurryAgent.logEvent('Vimeo');ga('send', 'event', 'button', 'click', 'Vimeo');" target="_blank">Vimeo</a>
           </div>
         </div> 
       </div>
@@ -286,10 +286,10 @@
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <div class="social-icons si-icon-effect">
-              <a href="https://www.facebook.com/selftune" class="si-icon fa fa-facebook" onclick="FlurryAgent.logEvent('Facebook')" target="_blank">Facebook</a>
-              <a href="https://twitter.com/SelfTune" class="si-icon fa fa-twitter" onclick="FlurryAgent.logEvent('Twitter')" target="_blank">Twitter</a>
-              <a href="http://vk.com/self_tune" class="si-icon fa fa-vk" onclick="FlurryAgent.logEvent('VK')" target="_blank">VK</a>
-              <a href="https://vimeo.com/channels/selftune" class="si-icon fa fa-vimeo-square" onclick="FlurryAgent.logEvent('Vimeo')" target="_blank">Vimeo</a>
+              <a href="https://www.facebook.com/selftune" class="si-icon fa fa-facebook" onclick="FlurryAgent.logEvent('Facebook');ga('send', 'event', 'button', 'click', 'Facebook');" target="_blank">Facebook</a>
+              <a href="https://twitter.com/SelfTune" class="si-icon fa fa-twitter" onclick="FlurryAgent.logEvent('Twitter');ga('send', 'event', 'button', 'click', 'Twitter');" target="_blank">Twitter</a>
+              <a href="http://vk.com/self_tune" class="si-icon fa fa-vk" onclick="FlurryAgent.logEvent('VK');ga('send', 'event', 'button', 'click', 'VK');" target="_blank">VK</a>
+              <a href="https://vimeo.com/channels/selftune" class="si-icon fa fa-vimeo-square" onclick="FlurryAgent.logEvent('Vimeo');ga('send', 'event', 'button', 'click', 'Vimeo');" target="_blank">Vimeo</a>
             </div>
           </div>
         </div>
@@ -325,6 +325,17 @@
       (document.location.protocol=='https:'?
       "https://clicktalecdn.sslcs.cdngc.net/www02/ptc/eebe8542-2149-4849-a69c-3365e7a0ede1.js":
       "http://cdn.clicktale.net/www02/ptc/eebe8542-2149-4849-a69c-3365e7a0ede1.js")+"'%20type='text/javascript'%3E%3C/script%3E"));
+    </script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-48141586-1', 'self-tune.com');
+      ga('send', 'pageview');
+
     </script>
 
     <!-- ClickTale end of Bottom part -->
