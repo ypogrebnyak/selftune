@@ -93,7 +93,8 @@
         <i class="fa fa-bullhorn"></i>Share experience with friends<br/>
       </p>
         <div class="buttons group" style="margin-top: 40px">
-        	<a class="appstore-btn" onclick="$('#subscribe').animatescroll({scrollSpeed:1000,easing:'easeInOutCubic'});FlurryAgent.logEvent('AppStoreClick');ga('send', 'event', 'button', 'click', 'App Store');"></a>
+        	<a class="appstore-btn"></a>
+          <a class="winphone-btn"></a>
         </div>
       </div>
     </section>
@@ -105,10 +106,10 @@
       	<div class="col-lg-6 col-lg-offset-6 col-md-offset-5 col-md-6 col-sm-12 col-xs-12">
           <h1>Follow Us</h1>
           <div class="social-icons si-icon-effect">
-            <a href="https://www.facebook.com/selftune" class="si-icon fa fa-facebook" onclick="FlurryAgent.logEvent('Facebook');ga('send', 'event', 'button', 'click', 'Facebook');" target="_blank">Facebook</a>
-            <a href="https://twitter.com/SelfTune" class="si-icon fa fa-twitter" onclick="FlurryAgent.logEvent('Twitter');ga('send', 'event', 'button', 'click', 'Twitter');" target="_blank">Twitter</a>
-            <a href="http://vk.com/self_tune" class="si-icon fa fa-vk" onclick="FlurryAgent.logEvent('VK');ga('send', 'event', 'button', 'click', 'VK');" target="_blank">VK</a>
-            <a href="https://vimeo.com/channels/selftune" class="si-icon fa fa-vimeo-square" onclick="FlurryAgent.logEvent('Vimeo');ga('send', 'event', 'button', 'click', 'Vimeo');" target="_blank">Vimeo</a>
+              <a class="si-icon fa fa-facebook general">Facebook</a>
+              <a class="si-icon fa fa-twitter general">Twitter</a>
+              <a class="si-icon fa fa-vk general">VK</a>
+              <a class="si-icon fa fa-vimeo-square general">Vimeo</a>
           </div>
         </div> 
       </div>
@@ -157,37 +158,31 @@
     </section>
     
     <!--About-->
-    <!-- <section class="content-block" id="about">
+    <section class="content-block" id="about">
     	<div class="container">
-      	<div class="row animation" data-animation="flipInX"> --><!--By adding/removing class "animation" we enable/disable scroll animation of current element-->
-        	<!-- <h1 class="white">SelfTune - way to a healthy lifestyle</h1>
-        </div>
-        
-        	<p class="white">Have you ever felt overworked or exhausted? Often experience stress and headaches? Constantly feel lack of sleep? SelfTune helps to solve these problems and to organize your life in a right way.</p>
-
-<p class="white">We analyze your heart rate and give advice to improve your life quality. You'll be able to work more efficiently, always be in a good shape and good mood, be prosperous and enjoy your life. We will teach you to properly organize your day, to wisely choose a time for work and rest, to balance your intellectual and physical activities. And, most importantly - all this is personalized on the basis of your heart rate.</p>
-
-<p class="white">All you need to start is a smartphone and a heart rate sensor - for example, Polar H7. With the help of mobile app and a sensor you should make regular measurements of 2-5 minutes, and the system itself will start giving advice to you. Over time, these recommendations will be more accurate and, following them, you can experience their positive effect!</p>
-
-<p class="white">At the core of SelfTune is a modern heart rate variability methodology, actively﻿ used throughout the world. With the help of advanced algorithms developed by us, we give you the most customized and personalized advice.</p>
-
-<p class="white">SelfTune is designed to help people look at their life from a new angle . Our goal is to teach people to take care of their emotional health, to live life to the fullest and enjoy every moment!</p>
-        
-      </div>
-    </section> -->
-    
-    <!--Team-->
-    <section class="content-block" id="team">
-    	<div class="container">
-      	<div class="row animation" data-animation="fadeInUp"><!--By adding/removing class "animation" we enable/disable scroll animation of current element-->
-          <h1 class="white">Our team</h1>
-          <h2 class="white">We believe that staying in a good mood is a key to the healthy life</h2>
+      	<div class="row animation" data-animation="flipInX"><!--By adding/removing class "animation" we enable/disable scroll animation of current element-->
+        	<h1 class="white">[self tune] - way to a healthy lifestyle</h1>
         </div>
         <div class="row">
-        	<div class="col-lg-4 col-md-4 col-sm-6 animation" data-animation="fadeInLeft"><!--By adding/removing class "animation" we enable/disable scroll animation of current element-->
+        <div class="flex-video widescreen">
+          <iframe src="http://player.vimeo.com/video/93425936?title=0&amp;byline=0&amp;portrait=0&amp;color=8187eb" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+      </div>
+      </div>
+    </section>
+    
+    <!--Team-->
+    <section class="content-block white" id="team">
+    	<div class="container">
+      	<div class="row animation" data-animation="fadeInUp"><!--By adding/removing class "animation" we enable/disable scroll animation of current element-->
+          <h1>Our team</h1>
+          <h2>We believe that staying in a good mood is a key to the healthy life</h2>
+        </div>
+        <div class="row">
+        	<div class="col-lg-3 col-md-6 col-sm-6 animation" data-animation="fadeInLeft"><!--By adding/removing class "animation" we enable/disable scroll animation of current element-->
           	<div class="team">
               <img src="img/team/yury.png" width="248" height="248" alt="Yury Pogrebnyak"/>
-              <h2 class="white">Yury<br/>Pogrebnyak</h2>
+              <h2>Yury<br/>Pogrebnyak</h2>
               <!-- <h3>CEO,<br/>John Doe Corporation</h3> -->
               <div class="social-icons si-icon-effect">
                 <a href="https://www.facebook.com/yuriy.pogrebnyak" class="si-icon fa fa-facebook" target="_blank">Facebook</a>
@@ -196,10 +191,10 @@
               </div>
             </div>
           </div>
-        	<div class="col-lg-4 col-md-4 col-sm-6 animation" data-animation="fadeIn"><!--By adding/removing class "animation" we enable/disable scroll animation of current element-->
+        	<div class="col-lg-3 col-md-6 col-sm-6 animation" data-animation="fadeIn"><!--By adding/removing class "animation" we enable/disable scroll animation of current element-->
           	<div class="team">
               <img src="img/team/alex.png" width="248" height="248" alt="Alex Taraymovich"/>
-              <h2 class="white">Alex<br/>Taraymovich</h2>
+              <h2>Alex<br/>Taraymovich</h2>
               <!-- <h3>ART,<br/>John Doe Corporation</h3> -->
               <div class="social-icons si-icon-effect">
                 <a href="https://www.facebook.com/alexander.taraymovich" class="si-icon fa fa-facebook" target="_blank">Facebook</a>
@@ -208,15 +203,27 @@
               </div>
             </div>
           </div>
-        	<div class="col-lg-4 col-md-4 col-sm-12 animation" data-animation="fadeInRight"><!--By adding/removing class "animation" we enable/disable scroll animation of current element-->
+        	<div class="col-lg-3 col-md-6 col-sm-6 animation" data-animation="fadeInRight"><!--By adding/removing class "animation" we enable/disable scroll animation of current element-->
           	<div class="team">
               <img src="img/team/vasily.png" width="248" height="248" alt="Vasily Ruzov"/>
-              <h2 class="white">Vasily<br/>Ruzov</h2>
+              <h2>Vasily<br/>Ruzov</h2>
               <!-- <h3>Manager,<br/>John Doe Corporation</h3> -->
               <div class="social-icons si-icon-effect">
                 <a href="https://www.facebook.com/vasilij.ruzov" class="si-icon fa fa-facebook" target="_blank">Facebook</a>
                 <a href="http://vk.com/ruzovvo" class="si-icon fa fa-vk" target="_blank">VK</a>
                 <a href="http://www.linkedin.com/pub/vasilii-ruzov/66/843/449" class="si-icon fa fa-linkedin" target="_blank">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 animation" data-animation="fadeInRight"><!--By adding/removing class "animation" we enable/disable scroll animation of current element-->
+            <div class="team">
+              <img src="img/team/ksyu.png" width="248" height="248" alt="Ksyu Taraymovich"/>
+              <h2>Ksyu<br/>Taraymovich</h2>
+              <!-- <h3>Manager,<br/>John Doe Corporation</h3> -->
+              <div class="social-icons si-icon-effect">
+                <a href="https://www.facebook.com/kseniya.afanaseva.58" class="si-icon fa fa-facebook" target="_blank">Facebook</a>
+                <a href="http://vk.com/elliegrey" class="si-icon fa fa-vk" target="_blank">VK</a>
+                <a href="http://ru.linkedin.com/pub/kseniya-taraymovich/87/600/b09" class="si-icon fa fa-linkedin" target="_blank">LinkedIn</a>
               </div>
             </div>
           </div>
@@ -286,10 +293,10 @@
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <div class="social-icons si-icon-effect">
-              <a href="https://www.facebook.com/selftune" class="si-icon fa fa-facebook" onclick="FlurryAgent.logEvent('Facebook');ga('send', 'event', 'button', 'click', 'Facebook');" target="_blank">Facebook</a>
-              <a href="https://twitter.com/SelfTune" class="si-icon fa fa-twitter" onclick="FlurryAgent.logEvent('Twitter');ga('send', 'event', 'button', 'click', 'Twitter');" target="_blank">Twitter</a>
-              <a href="http://vk.com/self_tune" class="si-icon fa fa-vk" onclick="FlurryAgent.logEvent('VK');ga('send', 'event', 'button', 'click', 'VK');" target="_blank">VK</a>
-              <a href="https://vimeo.com/channels/selftune" class="si-icon fa fa-vimeo-square" onclick="FlurryAgent.logEvent('Vimeo');ga('send', 'event', 'button', 'click', 'Vimeo');" target="_blank">Vimeo</a>
+              <a class="si-icon fa fa-facebook general">Facebook</a>
+              <a class="si-icon fa fa-twitter general">Twitter</a>
+              <a class="si-icon fa fa-vk general">VK</a>
+              <a class="si-icon fa fa-vimeo-square general">Vimeo</a>
             </div>
           </div>
         </div>

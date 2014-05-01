@@ -130,6 +130,46 @@ $(document).ready(function(e) {
 		autoControls: false,
 		pager: true
 	});
+
+	//////////////////////*Store buttons clicks*//////////////////////////
+
+    $('.appstore-btn').click(function(s,e) {
+    	$('#subscribe').animatescroll({scrollSpeed:1000,easing:'easeInOutCubic'});
+    	FlurryAgent.logEvent('AppStoreClick');
+    	ga('send', 'event', 'button', 'click', 'App Store');
+    });
+
+    $('.winphone-btn').click(function(s,e) {
+    	window.open("http://www.windowsphone.com/en-us/store/app/selftune/e9bce639-d4b6-497d-bd6f-d66ae9b08abd", "_blank");
+    	FlurryAgent.logEvent('WPStoreClick');
+    	ga('send', 'event', 'button', 'click', 'WP Store');
+    });
+
+    //////////////////////*Social buttons clicks*//////////////////////////
+
+    $('.fa-facebook.general').click(function(s,e) {
+    	window.open("https://www.facebook.com/selftune", "_blank");
+    	FlurryAgent.logEvent('Facebook');
+    	ga('send', 'event', 'button', 'click', 'Facebook');
+    });
+
+    $('.fa-twitter.general').click(function(s,e) {
+    	window.open("https://twitter.com/SelfTune", "_blank");
+    	FlurryAgent.logEvent('Twitter');
+    	ga('send', 'event', 'button', 'click', 'Twitter');
+    });
+
+    $('.fa-vk.general').click(function(s,e) {
+    	window.open("http://vk.com/self_tune", "_blank");
+    	FlurryAgent.logEvent('VK');
+    	ga('send', 'event', 'button', 'click', 'VK');
+    });
+
+    $('.fa-vimeo-square.general').click(function(s,e) {
+    	window.open("https://vimeo.com/channels/selftune", "_blank");
+    	FlurryAgent.logEvent('Vimeo');
+    	ga('send', 'event', 'button', 'click', 'Vimeo');
+    });
 	
 	
 ////////////////////////////////*Subscription Form Validation*//////////////////////////////

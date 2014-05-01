@@ -203,7 +203,7 @@ p {
 	text-align: justify;
 }
 .appstore-btn,
-.icloud-btn {
+.winphone-btn {
 	display: block;
 	width: 240px;
 	height: 100px;
@@ -218,13 +218,40 @@ p {
 	-moz-transition: all 450ms ease;
 	transition: all 450ms ease;
 }
-.icloud-btn {
-	background: transparent url(../img/img-iOS7/icloud.png) no-repeat center center;
+.winphone-btn {
+	background: transparent url(../img/img-iOS7/wpstore.png) no-repeat center center;
 	margin-right: 0px;
 }
 .appstore-btn:hover,
-.icloud-btn:hover {
+.winphone-btn:hover {
 	background-color: rgba(255, 255, 255, 0.3);
+}
+
+/*About video*/
+.flex-video {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 67.5%;
+  height: 0;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+ 
+.flex-video.widescreen { padding-bottom: 54.25%; }
+.flex-video.vimeo { padding-top: 0; }
+ 
+.flex-video iframe,
+.flex-video object,
+.flex-video embed {
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+  display:block;
+}
+@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+  .flex-video { padding-top: 0; }
 }
 
 /*App Slideshow*/
@@ -524,7 +551,7 @@ p {
 .team .im-icon-m,
 .team .im-icon-l {
 	margin: 15px 33px 0 0;
-	color: #fff;
+	color: #666;
 	-webkit-transition: all 400ms ease-in-out;
 	-moz-transition: all 400ms ease-in-out;
 	-o-transition: all 400ms ease-in-out;
@@ -537,7 +564,7 @@ p {
 .team .si-icon-effect .im-icon-s,
 .team .si-icon-effect .im-icon-m,
 .team .si-icon-effect .im-icon-l {
-	box-shadow: 0 0 0 1px #fff;
+	box-shadow: 0 0 0 1px #666;
 	-webkit-transition: all 400ms ease-in-out;
 	-moz-transition: all 400ms ease-in-out;
 	-o-transition: all 400ms ease-in-out;
@@ -547,13 +574,13 @@ p {
 .team:hover .im-icon-s,
 .team:hover .im-icon-m,
 .team:hover .im-icon-l {
-	color: #fff;
+	color: #666;
 }
 .team:hover .si-icon-effect .si-icon,
 .team:hover .si-icon-effect .im-icon-s,
 .team:hover .si-icon-effect .im-icon-m,
 .team:hover .si-icon-effect .im-icon-l {
-	box-shadow: 0 0 0 1px #fff;
+	box-shadow: 0 0 0 1px #666;
 }
 
 /*Clients*/
